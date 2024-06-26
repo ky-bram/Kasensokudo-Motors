@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Pembayaran</title>
+    <link rel="stylesheet" href="CSS/payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1>Aplikasi Pembayaran</h1>
+            <button class="back-button" onclick="goBack()">Kembali ke Halaman Utama</button>
+        </header>
+
+        <section class="payment-form">
+            <h2>Form Pembayaran</h2>
+            <form id="paymentForm">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="alamat">Alamat Lengkap:</label>
+                <input type="text" id="alamat" name="alamat" required>
+
+                <label for="telp">Nomor Telepon:</label>
+                <input type="number" id="telp" name="telp" required>
+
+                <label for="jenis">Kendaraan Yang Dibeli:</label>
+                <select id="jenis" name="jenis" required>
+                    <option value="TX25R">TX25R</option>
+                    <option value="Midnight Blade">Midnight Blade</option>
+                    <option value="Hypergale V6">Hypergale V6</option>
+                </select>
+
+                <label for="method">Metode Pembayaran:</label>
+                <select id="method" name="method" required>
+                    <option value="Kartu Kredit">Kartu Kredit</option>
+                    <option value="PayPal">PayPal</option>
+                    <option value="Transfer Bank">Transfer Bank</option>
+                    <option value="GoPay">GoPay</option>
+                    <option value="OVO">OVO</option>
+                    <option value="Dana">Dana</option>
+                </select>
+
+                <label for="norek">Nomor Rekening:</label>
+                <input type="number" id="norek" name="norek" required>
+
+                <label for="amount">Jumlah Pembayaran:</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <button type="submit">Kirim Pembayaran</button>
+            </form>
+        </section>
+
+        <section class="payment-list">
+            <h2>Daftar Pembayaran</h2>
+            <ul id="payment-list">
+                <!-- Daftar pembayaran akan dimuat di sini oleh JavaScript -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="Javascript/payment.js"></script>
+</body>
+</html>
