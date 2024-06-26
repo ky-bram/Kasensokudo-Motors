@@ -1,2 +1,0 @@
-# kasensokudo
-Web Host Test
